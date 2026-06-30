@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JOB APPLICATION FORM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Job Application Form</h1>
+    <form>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name">
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <br>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" placeholder="+92 0000000000">
+            <br>
+            <label for="dob">DOB:</label>
+            <input type="date" id="dob" name="dob">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Education</legend>
+            <label for="degree">Degree:</label>
+            <input type="text" id="degree" name="degree">
+            <br>
+            <label for="university">University:</label>
+            <input type="text" id="university" name="university">
+            <br>
+            <label for="cgpa">CGPA:</label>
+            <input type="text" id="cgpa" name="cgpa">
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Skills</legend>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            <br>
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+            <br>
+            <input type="checkbox" id="javascript" name="skills" value="Javascript">
+            <label for="javascript">Javascript</label>
+            <br>
+            <input type="checkbox" id="php" name="skills" value="PHP">
+            <label for="php">PHP</label>
+            <br>
+            <input type="checkbox" id="c++" name="skills" value="C++">
+            <label for="c++">C++</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experience</legend>
+            <input type="radio" id="exp1" name="experience" value="fresher">
+            <label for="exp1">Fresher</label>
+            <br>
+            <input type="radio" id="exp2" name="experience" value="1-2 years">
+            <label for="exp2">1-2 years</label>
+            <br>
+            <input type="radio" id="exp3" name="experience" value="3+ years">
+            <label for="exp3">3+ years</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Resume Upload</legend>
+            <input type="file" id="resume" name="file" accept=".pdf,.doc,.docx">
+            <label for="resume"></label>
+            <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Why Should We Hire You?</legend>
+            <textarea id="hire-reason" name="hire-reason" rows="10" cols="100" placeholder="Your Answer..."></textarea>
+            <label for="hire-reason"></label>
+        </fieldset>
+        <br>
+
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+    </form>
+</body>
+</html>
