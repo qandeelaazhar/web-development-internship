@@ -1,0 +1,142 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: #FB6F92;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+h1{
+    text-align:center;
+    color:#FFE5EC;
+    font-family: "Baloo 2",cursive;
+    margin-bottom: 40px;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card{
+    background-color:#FBD5DF;
+    padding: 20px;
+    margin:20px;
+    border-radius: 16px;
+    border:none;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.game{
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(3,100px);
+    gap:10px;
+    margin-bottom: 40px;
+
+}
+.box{
+    height:100px;
+    width:100px;
+    border-radius: 16px;
+    border:none;
+    cursor: pointer;
+    background-color:#FFB3C6;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(196,43,81,0.25);
+}
+.box:hover{
+    transform:scale(1.05);
+}
+#reset{
+    background-color: #FFB3C6;
+    color:#FFE5EC;
+    font-family: "Baloo 2",cursive;
+    border-radius: 16px;
+    border:none;
+    padding:20px;
+    cursor:pointer;
+    transition: 0.3s;
+
+}
+#reset:hover{
+   transform: scale(1.05);
+   box-shadow:0 8px 20px rgba(196,43,81,0.25);
+}
+.winCheck{
+    background-color: #FB6F92;
+    color:#FBD5DF;
+    margin:20px;
+    padding:20px;
+
+}
+.looseCheck{
+    background-color: #FB6F92;
+    color: #FBD5DF;
+    margin:20px;
+    padding:20px;
+}
+.drawCheck{
+    background-color: #FB6F92;
+    color: #FBD5DF;
+    margin:20px;
+    padding: 20px;
+}
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(251, 111, 146, 0.4);
+    backdrop-filter: blur(8px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    transition: 0.3s ease-in-out;
+}
+
+.popup-card {
+    background-color: #FBD5DF;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(196, 43, 81, 0.3);
+    text-align: center;
+    max-width: 300px;
+    width: 80%;
+}
+
+.popup-card h2 {
+    font-family: "Baloo 2", cursive;
+    color: #FB6F92;
+    margin-bottom: 24px;
+    font-size: 1.8rem;
+}
+
+#new-game {
+    background-color: #FFB3C6;
+    color: #FFE5EC;
+    font-family: "Baloo 2", cursive;
+    border-radius: 16px;
+    border: none;
+    padding: 15px 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+#new-game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(196, 43, 81, 0.25);
+}
+.hide {
+    display: none !important;
+}
