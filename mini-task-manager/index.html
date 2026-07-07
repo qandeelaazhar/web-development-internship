@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK MANAGER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>TASK MANAGER</h1>
+        <p>Stay organized and productive every day</p>
+        </header>
+
+        <section class="input-section">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <input type="date" id="dueDate">
+            <select name="priority" id="priority">
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button id="addTask">Add Task</button>
+        </section>
+
+        <section class="filter-section">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="active">Active</button>
+            <button class="filter-btn" data-filter="completed">Completed</button>
+        </section>
+
+        <section class="task-section">
+            <ul id="taskList"></ul>
+        </section>
+
+        <footer class="counter">
+            <p>Remaining: <span id="remainingCount">1</span></p>
+            <p>Completed: <span id="completedCount">1</span></p>
+            <button id="clearBtn">Clear Completed</button>
+        </footer>
+
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
+
